@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        
+        form{
+            
+            background-color:rgb(240, 216, 216);
+            width: 50%;
+            margin: 100px auto;
+            padding: 20px;
+            border: 20px;
+        }
+        h2{
+            text-align: center;
+        }
+        .border{
+            width: 50%;
+            height: 2px;
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+        .input-group{
+            margin: 20px 0;
+            font-size: 18px;
+        }
+        label{
+            display: inline-block;
+            width: 150px;
+        }
+        .gender-label{
+            display: inline;
+        }
+       
+        
+        .btn-group{
+            margin-left: 150px;
+        }
+        .btn-group > input{
+            padding: 10px 45px;
+            border: none;
+            cursor: pointer;
+            transition: .5s;
+            margin-left: 15px;
+        }
+        .btn-group > input:hover{
+            box-shadow: 5px 5px 10px #000;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <h2>Registrations Form</h2>
+        <div class="border"></div>
+        <div class="input-group">
+            <label for="uname">id:</label>
+            <input type="text" name="id" id="id" required>
+        </div>
+        <div class="input-group">
+            <label for="fname">name:</label>
+            <input type="text" name="name" id="name" required >
+        </div>
+        <div class="input-group">
+            <label for="Roun">Round:</label>
+            <select name="roun" id="roun">
+                <option value="52">52</option>
+                <option value="53">53</option>
+                <option value="54">54</option>
+                <option value="55">55</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="gender">Gender:</label>
+            <label for="male" class="gender-label">Male</label>
+            <input type="radio" name="gender" id="male">
+            <label for="fmale" class="gender-label">Female</label>
+            <input type="radio" name="gender" id="fmale">
+        </div>
+       <div class="input-group">
+        <label for="education">Education:</label>
+            <label for="SSC" class="ssc-label">SSC</label>
+            <input type="checkbox" name="ssc" id="ssc">
+            <label for="hsc" class="hsc-label">HSC</label>
+            <input type="checkbox" name="hsc" id="hsc">
+
+       </div>
+        <div class="input-group btn-group">
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+
+</body>
+
+</html>
